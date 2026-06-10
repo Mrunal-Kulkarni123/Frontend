@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.dashboard-card {
+  width: 500px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08),
+    0 20px 48px rgba(37, 99, 235, 0.1);
+
+  text-align: center;
+
+  transition: transform 0.3s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+.dashboard-card h1 {
+  color: #2563eb;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.dashboard-card h2 {
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+.dashboard-card p {
+  color: #64748b;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.dashboard-actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.dashboard-actions a,
+.dashboard-actions button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  border: none;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.dashboard-actions a {
+  background: #2563eb;
+  color: white;
+}
+
+.dashboard-actions a:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.dashboard-actions button {
+  background: #ef4444;
+  color: white;
+}
+
+.dashboard-actions button:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}

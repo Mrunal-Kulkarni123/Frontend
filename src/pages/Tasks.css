@@ -1,0 +1,66 @@
+.tasks-container {
+  min-height: 100vh;
+  padding: 40px;
+  background: #f4f6f8;
+}
+
+.tasks-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.tasks-header h1 {
+  color: #2563eb;
+}
+
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.task-card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.task-card h3 {
+  margin-bottom: 12px;
+  color: #1e293b;
+}
+
+.task-card p {
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.status,
+.priority {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.pending {
+  background: #fef3c7;
+}
+
+.completed {
+  background: #dcfce7;
+}
+
+.low {
+  background: #dbeafe;
+}
+
+.medium {
+  background: #fde68a;
+}
+
+.high {
+  background: #fecaca;
+}
