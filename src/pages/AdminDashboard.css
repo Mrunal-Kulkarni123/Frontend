@@ -1,0 +1,81 @@
+.admin-container {
+  min-height: 100vh;
+  background: #f4f6f8;
+  padding: 40px;
+}
+
+.admin-title {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 30px;
+}
+
+.admin-stats {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: white;
+  width: 220px;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.stat-card h2 {
+  font-size: 2rem;
+  color: #2563eb;
+}
+
+.stat-card p {
+  color: #64748b;
+  margin-top: 8px;
+}
+
+.section {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.section h2 {
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.user-row,
+.task-row {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.user-row:last-child,
+.task-row:last-child {
+  border-bottom: none;
+}
+
+.task-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-task-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-task-btn:hover {
+  background: #dc2626;
+}
