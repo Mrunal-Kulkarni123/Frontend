@@ -1,7 +1,9 @@
 import { useState } from "react";
 import api from "../api/axios";
 import "./register.css";
+import { useNavigate } from "react-router-dom";
 function Register() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -30,6 +32,7 @@ function Register() {
         email: "",
         password: "",
       });
+      navigate("/");
     } catch (err) {
       alert(err.response?.data?.message || "Something went wrong");
     }
